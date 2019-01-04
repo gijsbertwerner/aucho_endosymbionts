@@ -16,6 +16,7 @@ library(corHMM)
 library(qpcR)
 library(parallel)
 library(ggplot2)
+library(gridExtra)
 
 # Data --------------------------------------------------------------------
 
@@ -660,7 +661,6 @@ p_density_plot<-
   theme(axis.text.x = element_text(size = rel(1.75)),axis.text.y = element_text(size = rel(1.75)))
 p_density_plot
 
-library(gridExtra)
 png("./Output/corevol_diet_xylem_primary.endosymbiont_undated_subfam_boots_reduced_plots.png",width = 800)
 grid.arrange(p_density_plot,aic_dif_density_plot,ncol=2)
 dev.off()
@@ -1051,7 +1051,6 @@ aic_dif_density_plot_25fn_25fp
 
 
 ###Create figures combining all the above in a single figure
-library(gridExtra)
 png("./Output/corevol_diet_xylem_primary.endosymbiont_undated_subfam_full_fp_fn_aic_dif_plots.png",width = 1400,height = 1800)
 grid.arrange(aic_dif_density_plot_05fn_05fp,aic_dif_density_plot_05fn_15fp,aic_dif_density_plot_05fn_25fp,
              aic_dif_density_plot_15fn_05fp,aic_dif_density_plot_15fn_15fp,aic_dif_density_plot_15fn_25fp,
