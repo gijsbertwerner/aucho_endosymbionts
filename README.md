@@ -1,5 +1,4 @@
-# aucho_endosymbionts
-Auchenorrhyncha Endosymbionts Analysis
+# Auchenorrhyncha Endosymbionts Analysis
 
 This projects contains an R-script to repeat all the analyses and generate all the figures from Bell-Roberts, Douglas and Werner (in submission).
 
