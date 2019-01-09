@@ -17,14 +17,15 @@ library(qpcR)
 library(parallel)
 library(ggplot2)
 library(gridExtra)
+library(dplyr)
 
 # Data --------------------------------------------------------------------
 
 #Load the data-files
 
 #Phylogenies read-in
-aucho_subfam_undated<-read.tree("./Data/Booster/aucho_till_subfamily_boosterweb_tbe_norm.nh")
-aucho_subfam_dated<-read.tree("./Data/Dating/r8s/dist/aucho_till_subfamily_boosterweb_dated.phy")
+aucho_subfam_undated<-read.tree("./Data/aucho_till_subfamily_boosterweb_tbe_norm.nh")
+aucho_subfam_dated<-read.tree("./Data/aucho_till_subfamily_boosterweb_dated.phy")
 
 #Quick filecheck
 aucho_subfam_undated
@@ -37,6 +38,7 @@ plot(aucho_subfam_dated)
 #Data file
 dat_aucho<-read.csv("./Data/Master_db_standardised_unique_with_taxonomy.csv",as.is=T,strip.white = T,row.names = NULL)
 head(dat_aucho)
+dat_aucho<-dat_aucho %>% dplyr::filter(!is.na(X)) #Removes empty rows spacing data rows. 
 sapply(dat_aucho, class)
 
 # Main Data Formatting ----------------------------------------------------
