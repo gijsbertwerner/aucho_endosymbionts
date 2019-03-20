@@ -16,21 +16,16 @@ library(corHMM)
 library(qpcR)
 library(parallel)
 library(ggplot2)
-library(gridExtra)
-library(dplyr)
 
 # Data --------------------------------------------------------------------
 
 #Load the data-files
 
 #Phylogenies read-in
-aucho_subfam_undated<-read.tree("./Data/aucho_till_subfamily_boosterweb_tbe_norm.nh")
-aucho_subfam_dated<-read.tree("./Data/aucho_till_subfamily_boosterweb_dated.phy")
+aucho_subfam_dated<-read.tree("./Data/Dating/r8s/dist/aucho_till_subfamily_boosterweb_dated.phy")
 
 #Quick filecheck
-aucho_subfam_undated
 aucho_subfam_dated
-is.binary(aucho_subfam_undated)
 is.binary(aucho_subfam_dated)
 is.ultrametric(aucho_subfam_dated,tol = 0.0001) #Is actually ultrametric, rounding errors. 
 plot(aucho_subfam_dated)
@@ -38,7 +33,6 @@ plot(aucho_subfam_dated)
 #Data file
 dat_aucho<-read.csv("./Data/Master_db_standardised_unique_with_taxonomy.csv",as.is=T,strip.white = T,row.names = NULL)
 head(dat_aucho)
-dat_aucho<-dat_aucho %>% dplyr::filter(!is.na(X)) #Removes empty rows spacing data rows. 
 sapply(dat_aucho, class)
 
 # Main Data Formatting ----------------------------------------------------
@@ -75,17 +69,22 @@ dat_aucho$any_YLS_symbiont<-ifelse(dat_aucho$companion.symbiont.taxonomic.group 
 dat_aucho$any_YLS_symbiont<-ifelse(is.na(dat_aucho$companion.symbiont.taxonomic.group),NA,dat_aucho$any_YLS_symbiont)
 table(dat_aucho$any_YLS_symbiont,useNA = "ifany")
 
+#Remove the genera for which we have no Sulcia data. #See if we keep this. 
+table(dat_aucho$primary.endosymbiont,useNA = "ifany")
+dat_aucho <-dat_aucho %>% dplyr::filter(!is.na(primary.endosymbiont))
+table(dat_aucho$primary.endosymbiont,useNA = "ifany")
+
 #Subset tree and dataset to their overlap. 
-small_aucho_subfam_undated<-drop.tip(phy = aucho_subfam_undated,tip = setdiff(aucho_subfam_undated$tip.label,dat_aucho$genus))
-small_aucho_subfam_undated
 small_aucho_subfam_dated<-drop.tip(phy = aucho_subfam_dated,tip = setdiff(aucho_subfam_dated$tip.label,dat_aucho$genus))
 small_aucho_subfam_dated
 #Same tip label ordering (this is important later on for tip label colours)
 small_aucho_subfam_dated$tip.label==small_aucho_subfam_dated$tip.label 
-small_aucho_subfam_undated$tip.label==small_aucho_subfam_dated$tip.label
 #Reduce dataset
 reduced_dat_aucho<-dat_aucho %>% dplyr::filter(genus %in% small_aucho_subfam_dated$tip.label)
 reduced_dat_aucho_small_aucho_subfam_order<-reduced_dat_aucho[match(small_aucho_subfam_dated$tip.label,reduced_dat_aucho$genus),]
+
+#Print the analysed genus list #Potentially still reverse to achieve match with figure order. 
+write.csv(rev(small_aucho_subfam_dated$tip.label),"./Output/Genera_Analysed.csv")
 
 # Data Descriptives -------------------------------------------------------
 head(reduced_dat_aucho_small_aucho_subfam_order)
@@ -152,21 +151,21 @@ nodelabels(cex=0.5)
 round(head(ASR_diet_ARD_yang_subfam_dated$states,12),3)
 head(ASR_diet_ARD_yang_subfam_dated$phy$edge,12)
 
-pdf("./Output/Supfig2_ASR_diet.pdf",width = 12,height = 12)
+pdf("./Output/FigS2_HighDefinition.pdf",width = 12,height = 12)
 plotRECON(ASR_diet_ARD_yang_subfam_dated$phy,ASR_diet_ARD_yang_subfam_dated$states,
-          piecolors = c("#fdae61","#a6d96a","#1a9641"),
+          piecolors = c("#fdae61","#d9ef8b","#1a9641"),
           label.offset=3.85,cex=0.45,pie.cex=0.325)
 tiplabels(pch=23,offset=1.5,cex=1.25,
-          bg= c("#fdae61","black","#a6d96a","#1a9641")[as.factor(dat_ASR_diet$diet)])
+          bg= c("#fdae61","black","#d9ef8b","#1a9641")[as.factor(dat_ASR_diet$diet)])
 polygon(x=c(0,50,50,0),y=c(0,0,145,145),col="#80808025",border="#80808025")
 polygon(x=c(100,150,150,100),y=c(0,0,145,145),col="#80808025",border="#80808025")
 polygon(x=c(200,250,250,200),y=c(0,0,145,145),col="#80808025",border="#80808025")
 par(new=T)
 plotRECON(ASR_diet_ARD_yang_subfam_dated$phy,ASR_diet_ARD_yang_subfam_dated$states,
-          piecolors = c("#fdae61","#a6d96a","#1a9641"),
+          piecolors = c("#fdae61","#d9ef8b","#1a9641"),
           label.offset=3.85,cex=0.45,pie.cex=0.325)
 tiplabels(pch=23,offset=1.5,cex=1.25,
-          bg= c("#fdae61","black","#a6d96a","#1a9641")[as.factor(dat_ASR_diet$diet)])
+          bg= c("#fdae61","black","#d9ef8b","#1a9641")[as.factor(dat_ASR_diet$diet)])
 dev.off()
 
 ######Primary Symbiosis
@@ -251,7 +250,7 @@ dat_ASR_primary.endosymbiont_corhmm<-
 dat_ASR_primary.endosymbiont_corhmm$genus== corHMM_primary.endosymbiont_rate2_yang_subfam_dated$phy$tip.label
 nrow(dat_ASR_primary.endosymbiont_corhmm)
 
-pdf("./Output/Subfig_ASR_primary_endos.pdf",width = 20,height = 20)
+pdf("./Output/FigS4_HighDefinition.pdf",width = 20,height = 20)
 plotRECON(corHMM_primary.endosymbiont_rate2_yang_subfam_dated$phy,corHMM_primary.endosymbiont_rate2_yang_subfam_dated$states,
           piecolors = c("#33a02c","#1f78b4","#b2df8a","#a6cee3"),
           label.offset=3.85,cex=0.55,pie.cex=0.325)
@@ -349,85 +348,24 @@ getMRCA(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy,tip = c
 head(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy$edge,12)
 round(head(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$states,12),3)
 
-# Figure 1 ----------------------------------------------------------------
-#Combine the three ASRs in a single figure, and indicate the data
-
-#Create a branch colour vector based on diet reconstruction
-head(ASR_diet_ARD_yang_subfam_dated$phy$edge)
-tail(ASR_diet_ARD_yang_subfam_dated$phy$edge)
-max(ASR_diet_ARD_yang_subfam_dated$phy$edge)
-
-#Get the ancetral node state from the diet reconstruction
-dietnodelabs<-ASR_diet_ARD_yang_subfam_dated$phy$node.label
-dietnodelabs
-names(dietnodelabs)<-146:282
-dietnodelabs
-
-colnodevec<-dietnodelabs[match(ASR_diet_ARD_yang_subfam_dated$phy$edge[,1],names(dietnodelabs))]
-colnodevec<-brewer.pal(n=5,"RdYlGn")[c(2,4,5)][as.factor(colnodevec)]
-colnodevec
-
-#Create a data frame to plot the trait data
-plot_dat_bin<-reduced_dat_aucho_small_aucho_subfam_order %>% dplyr::select(diet,primary.endosymbiont,companion.symbiont.taxonomic.group)
-row.names(plot_dat_bin)<-reduced_dat_aucho_small_aucho_subfam_order$genus
-plot_dat_bin$diet<-as.numeric(as.factor(plot_dat_bin$diet))-1
-plot_dat_bin$companion.symbiont.taxonomic.group<-as.numeric(as.factor(plot_dat_bin$companion.symbiont.taxonomic.group))-1
-table(reduced_dat_aucho_small_aucho_subfam_order$companion.symbiont.taxonomic.group)
-table(plot_dat_bin$companion.symbiont.taxonomic.group)
-head(plot_dat_bin)
-
-###########Figure 1
-pdf("./Output/Figure1_Raw_fan.pdf",width = 20,height = 20)
-trait.plot(tree = small_aucho_subfam_dated,dat = plot_dat_bin,
-           cols = list(diet = c(brewer.pal(n=5,"RdYlGn")[1:2],brewer.pal(n=5,"RdYlGn")[4],
-                                brewer.pal(n=5,"RdYlGn")[3],brewer.pal(n=5,"RdYlGn")[5]),
-                       primary.endosymbiont=brewer.pal(n=3,"Greys")[c(2,3)],
-                       companion.symbiont.taxonomic.group=brewer.pal(n=6,"Set2")),
-           type="f",legend=F,w=1/40,
-           cex.lab = 0.01,tip.color="white",
-           edge.color=colnodevec)
-nodelabels(pie = ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$states,
-           piecol= c(brewer.pal(n=6,"Set2")[1:3],brewer.pal(n=6,"Set2")[5:6]),cex=0.3)
-add.scale.bar()
+pdf("./Output/FigS5_HighDefinition.pdf",width = 12,height = 12)
+plotRECON(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy,
+          ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$states,
+          piecolors = c(brewer.pal(n=7,"Set2")[1:3],brewer.pal(n=7,"Set2")[5],brewer.pal(n=7,"Set2")[7]),
+          label.offset=3.85,cex=0.45,pie.cex=0.325)
+tiplabels(pch=23,offset=1.5,cex=1.25,
+          bg= c(brewer.pal(n=7,"Set2")[1:5],brewer.pal(n=7,"Set2")[7])[as.factor(reduced_dat_aucho_small_aucho_subfam_order$companion.symbiont.taxonomic.group)])
+polygon(x=c(0,50,50,0),y=c(0,0,145,145),col="#80808025",border="#80808025")
+polygon(x=c(100,150,150,100),y=c(0,0,145,145),col="#80808025",border="#80808025")
+polygon(x=c(200,250,250,200),y=c(0,0,145,145),col="#80808025",border="#80808025")
+par(new=T)
+plotRECON(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy,
+          ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$states,
+          piecolors = c(brewer.pal(n=7,"Set2")[1:3],brewer.pal(n=7,"Set2")[5],brewer.pal(n=7,"Set2")[7]),
+          label.offset=3.85,cex=0.45,pie.cex=0.325)
+tiplabels(pch=23,offset=1.5,cex=1.25,
+          bg= c(brewer.pal(n=7,"Set2")[1:5],brewer.pal(n=7,"Set2")[7])[as.factor(reduced_dat_aucho_small_aucho_subfam_order$companion.symbiont.taxonomic.group)])
 dev.off()
-
-pdf("./Output/LegendPlot.pdf")
-plot.new()
-legend(x=0,y=1,legend=c("Moss","Parenchyma","Predatory","Phloem","Xylem",
-                        "No Primary Sym","With Primary Sym",
-                        "Companion Absent","Alfaproteobacteria","Betaproteobacteria","Beta+Gammaproteo","Gamma_proteobacteria","YLS"),
-       pch=rep(23,13),
-       pt.bg=c(brewer.pal(n=5,"RdYlGn"),brewer.pal(n=3,"Greys")[c(2,3)],brewer.pal(n=6,"Set2")),
-       cex=1)
-dev.off()
-
-pdf("./Output/LegendPlot_Diet.pdf")
-plot.new()
-legend(x=0,y=1,legend=c("Moss","Parenchyma","Predatory","Phloem","Xylem"),
-       pch=rep(23,5),
-       pt.bg=c(brewer.pal(n=5,"RdYlGn")),
-       cex=2,
-       title=expression(bolditalic("Host diet")))
-dev.off()
-
-pdf("./Output/LegendPlot_Primary.pdf")
-plot.new()
-legend(x=0,y=1,legend=c("No Primary Sym","With Primary Sym"),
-       pch=rep(23,5),
-       pt.bg=brewer.pal(n=3,"Greys")[c(2,3)],
-       cex=2,
-       title=expression(bolditalic("Primary endosymbiosis")))
-dev.off()
-
-pdf("./Output/LegendPlot_Secondary.pdf")
-plot.new()
-legend(x=0,y=1,legend=c("Companion Absent","Alfaproteobacteria","Betaproteobacteria","Beta+Gammaproteo","Gamma_proteobacteria","YLS"),
-       pch=rep(23,5),
-       pt.bg=brewer.pal(n=6,"Set2"),
-       cex=2,
-       title=expression(bolditalic("Companion symbiosis")))
-dev.off()
-
 
 # Data Analysis - Correlated Models of Evolution  -------------------------------------------------------
 
@@ -479,17 +417,6 @@ recon_corevol_diet_xylem_primary.endosymbiont_dated_subfam<-
 
 #Plot
 round(corevol_diet_xylem_primary.endosymbiont_dated_subfam$dependent.Q*100,2)
-
-pdf("./Output/Figure2.pdf",width = 20,height = 20)
-plot.phylo(drop.tip(small_aucho_subfam_dated,
-                    tip = small_aucho_subfam_dated$tip.label[!small_aucho_subfam_dated$tip.label %in% dat_fitPagel_diet_xylem_primary.endosymbiont$genus]),
-           type="p", show.tip.label = F,no.margin=F)
-tiplabels(pch = 24,bg=c("gray80","gray30")[factor(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont)],offset = 4,cex=2,lwd=1)
-tiplabels(pch = 23,bg=c("gray80","#1A9641")[factor(vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem)],offset = 8,cex=2,lwd=1)
-nodelabels(pie = recon_corevol_diet_xylem_primary.endosymbiont_dated_subfam$lik.anc.states,
-           piecol = c("#4daf4a","#377eb8","#e41a1c","#984ea3"),cex=0.45)
-axisPhylo(cex=2.5)
-dev.off()
 
 ###Any beta symbiont vs diet
 
@@ -590,6 +517,51 @@ save(corevol_diet_xylem_any_YLS_symbiont_dated_subfam,file="./Output/corevol_die
 
 
 
+# Main text Figure --------------------------------------------------------
+
+#Create a data frame to plot the trait data
+plot_dat_bin<-reduced_dat_aucho_small_aucho_subfam_order %>% dplyr::select(primary.endosymbiont,diet,companion.symbiont.taxonomic.group)
+nrow(plot_dat_bin)
+row.names(plot_dat_bin)<-reduced_dat_aucho_small_aucho_subfam_order$genus
+plot_dat_bin$diet<-as.numeric(as.factor(plot_dat_bin$diet))-1
+plot_dat_bin$companion.symbiont.taxonomic.group<-as.numeric(as.factor(plot_dat_bin$companion.symbiont.taxonomic.group))-1
+table(reduced_dat_aucho_small_aucho_subfam_order$companion.symbiont.taxonomic.group)
+table(plot_dat_bin$companion.symbiont.taxonomic.group)
+table(plot_dat_bin$diet)
+head(plot_dat_bin)
+
+#Create a branch colour vector based on companion symbionts status
+head(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy$edge)
+tail(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy$edge)
+max(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy$edge)
+
+#Get the ancetral node state from the diet reconstruction
+companionnodelabs<-ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy$node.label
+companionnodelabs
+names(companionnodelabs)<-143:276
+companionnodelabs
+
+colnodevec_companion<-companionnodelabs[
+  match(ASR_companion.symbiont.taxonomic.group_SYM_yang_subfam_dated$phy$edge[,1],names(companionnodelabs))]
+table(colnodevec_companion)
+colnodevec_companion<-brewer.pal(n=7,"Set2")[c(1,3,5,7)][as.factor(colnodevec_companion)]
+colnodevec_companion
+
+#Main text superfigure
+pdf("./Output/MainTextFigure.pdf",width = 20,height = 20)
+trait.plot(tree = small_aucho_subfam_dated,dat = plot_dat_bin,
+           cols = list(primary.endosymbiont=brewer.pal(n=3,"Greys")[c(2,3)],
+                       diet = c("white","#fdae61","#d9ef8b","#1a9641"),
+                       companion.symbiont.taxonomic.group=c(brewer.pal(n=7,"Set2")[1:5],brewer.pal(n=7,"Set2")[7])),
+           type="p",legend=F,w=1/40,edge.width =2,
+           cex.lab = 0.01,tip.color="white",
+           edge.color=colnodevec_companion)
+nodelabels(pie = recon_corevol_diet_xylem_primary.endosymbiont_dated_subfam$lik.anc.states,
+           piecol = c("#a65628","#377eb8","#984ea3","#ff7f00"),cex=0.3)
+add.scale.bar()
+dev.off()
+
+
 ############################################################################################################################
 ######Sensitivity Analyses  -------------------------------------------------------
 ############################################################################################################################
@@ -601,7 +573,7 @@ save(corevol_diet_xylem_any_YLS_symbiont_dated_subfam,file="./Output/corevol_die
 aucho_subfam_undated_boots<-read.tree("./Data/RAxML_bootstrap.out_in_lbrem_outdefined_constraint_till_subfamily_minus_Formo_Xyphon_k")
 aucho_subfam_undated_boots
 
-#Subset to the species where we have correlated diet vs primary data:
+#Subset to the genera where we have correlated diet vs primary data:
 aucho_subfam_undated_boots_reduced<-list()
 for(i in 1:length(aucho_subfam_undated_boots)){
   aucho_subfam_undated_boots_reduced[[i]]<-drop.tip(aucho_subfam_undated_boots[[i]],
@@ -663,7 +635,8 @@ p_density_plot<-
   theme(axis.text.x = element_text(size = rel(1.75)),axis.text.y = element_text(size = rel(1.75)))
 p_density_plot
 
-png("./Output/corevol_diet_xylem_primary.endosymbiont_undated_subfam_boots_reduced_plots.png",width = 800)
+library(gridExtra)
+png("./Output/FigureS6.png",width = 800)
 grid.arrange(p_density_plot,aic_dif_density_plot,ncol=2)
 dev.off()
 
@@ -794,7 +767,7 @@ save(corevol_diet_xylem_primary.endosymbiont_dated_subfam_15fn_25fp,
 
 correct_prob_negatives<-0.75
 correct_prob_positives<-0.95
-corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_05p<-list()
+corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_05fp<-list()
 for(i in 1:100){
   absence_mutate<-1-rbinom(n=length(which(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont==0)),
                            size=1,prob = correct_prob_negatives)
@@ -808,8 +781,8 @@ for(i in 1:100){
              y = vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem)
 }
 
-save(corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_05p,
-     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_05p")
+save(corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_05fp,
+     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_05fp")
 
 correct_prob_negatives<-0.75
 correct_prob_positives<-0.85
@@ -827,8 +800,8 @@ for(i in 1:100){
              y = vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem)
 }
 
-save(corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_15p,
-     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_15p")
+save(corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_15fp,
+     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_15fp")
 
 correct_prob_negatives<-0.75
 correct_prob_positives<-0.75
@@ -846,8 +819,8 @@ for(i in 1:100){
              y = vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem)
 }
 
-save(corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_25p,
-     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_25p")
+save(corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_25fp,
+     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_subfam_25fn_25fp")
 save.image()
 
 ###Analyse & visualise data uncertainty
@@ -1053,7 +1026,8 @@ aic_dif_density_plot_25fn_25fp
 
 
 ###Create figures combining all the above in a single figure
-png("./Output/corevol_diet_xylem_primary.endosymbiont_undated_subfam_full_fp_fn_aic_dif_plots.png",width = 1400,height = 1800)
+library(gridExtra)
+png("./Output/FigureS7.png",width = 1400,height = 1800)
 grid.arrange(aic_dif_density_plot_05fn_05fp,aic_dif_density_plot_05fn_15fp,aic_dif_density_plot_05fn_25fp,
              aic_dif_density_plot_15fn_05fp,aic_dif_density_plot_15fn_15fp,aic_dif_density_plot_15fn_25fp,
              aic_dif_density_plot_25fn_05fp,aic_dif_density_plot_25fn_15fp,aic_dif_density_plot_25fn_25fp,
@@ -1061,12 +1035,12 @@ grid.arrange(aic_dif_density_plot_05fn_05fp,aic_dif_density_plot_05fn_15fp,aic_d
 dev.off()
 
 #########
-#3. Species Sampling  -----------------------------------------------------
+#3. Genus Sampling  -----------------------------------------------------
 
 #Do they have the same order?
 names(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont)==names(vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem)
 
-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss<-list()
+corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss<-list()
 for(i in 1:100){
   loss_num<-sample(x=1:length(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont),
                    size = round(length(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont)*0.10))
@@ -1076,16 +1050,16 @@ for(i in 1:100){
     drop.tip(phy = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont,
              tip = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont$tip.label[!small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont$tip.label %in% 
                                                                                                 names(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont_reduced)])
-  corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss[[i]]<-
+  corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss[[i]]<-
     fitPagel(tree = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont_reduced,
              x = vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont_reduced,
              y = vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem_reduced)
 }
 
-save(corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss,
-     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss")
+save(corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss,
+     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss")
 
-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss<-list()
+corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss<-list()
 for(i in 1:100){
   loss_num<-sample(x=1:length(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont),
                    size = round(length(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont)*0.20))
@@ -1095,16 +1069,16 @@ for(i in 1:100){
     drop.tip(phy = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont,
              tip = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont$tip.label[!small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont$tip.label %in% 
                                                                                                 names(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont_reduced)])
-  corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss[[i]]<-
+  corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss[[i]]<-
     fitPagel(tree = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont_reduced,
              x = vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont_reduced,
              y = vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem_reduced)
 }
 
-save(corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss,
-     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss")
+save(corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss,
+     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss")
 
-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss<-list()
+corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss<-list()
 for(i in 1:100){
   loss_num<-sample(x=1:length(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont),
                    size = round(length(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont)*0.30))
@@ -1114,24 +1088,24 @@ for(i in 1:100){
     drop.tip(phy = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont,
              tip = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont$tip.label[!small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont$tip.label %in% 
                                                                                                 names(vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont_reduced)])
-  corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss[[i]]<-
+  corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss[[i]]<-
     fitPagel(tree = small_aucho_subfam_dated_corevol_diet_xylem_primary.endosymbiont_reduced,
              x = vec_fitPagel_diet_xylem_primary.endosymbiont_primary.endosymbiont_reduced,
              y = vec_fitPagel_diet_xylem_primary.endosymbiont_diet_xylem_reduced)
 }
 
-save(corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss,
-     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss")
+save(corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss,
+     file="./Output/corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss")
 
 save.image()
 
-###Analyse and visualise the differences for the three species sampling reconstructions (each replicated 100 times)
+###Analyse and visualise the differences for the three genus sampling reconstructions (each replicated 100 times)
 p_vec_sampling_10loss<-NULL
 aic_dif_vec_sampling_10loss<-NULL
-for(i in 1:length(corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss)){
-  p_vec_sampling_10loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss[[i]]$P
-  aic_dif_vec_sampling_10loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss[[i]]$independent.AIC-
-    corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_10loss[[i]]$dependent.AIC
+for(i in 1:length(corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss)){
+  p_vec_sampling_10loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss[[i]]$P
+  aic_dif_vec_sampling_10loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss[[i]]$independent.AIC-
+    corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_10loss[[i]]$dependent.AIC
 }
 
 aic_dif_density_plot_sampling_10loss<-
@@ -1142,15 +1116,15 @@ aic_dif_density_plot_sampling_10loss<-
   xlim(0,25)+
   xlab("delta AIC")+
   theme_bw()+
-  ggtitle("A. Species loss 10%")
+  ggtitle("A. Genus loss 10%")
 aic_dif_density_plot_sampling_10loss
 
 p_vec_sampling_20loss<-NULL
 aic_dif_vec_sampling_20loss<-NULL
-for(i in 1:length(corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss)){
-  p_vec_sampling_20loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss[[i]]$P
-  aic_dif_vec_sampling_20loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss[[i]]$independent.AIC-
-    corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_20loss[[i]]$dependent.AIC
+for(i in 1:length(corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss)){
+  p_vec_sampling_20loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss[[i]]$P
+  aic_dif_vec_sampling_20loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss[[i]]$independent.AIC-
+    corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_20loss[[i]]$dependent.AIC
 }
 
 aic_dif_density_plot_sampling_20loss<-
@@ -1161,15 +1135,15 @@ aic_dif_density_plot_sampling_20loss<-
   xlim(0,25)+
   xlab("delta AIC")+
   theme_bw()+
-  ggtitle("B. Species loss 20%")
+  ggtitle("B. Genus loss 20%")
 aic_dif_density_plot_sampling_20loss
 
 p_vec_sampling_30loss<-NULL
 aic_dif_vec_sampling_30loss<-NULL
-for(i in 1:length(corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss)){
-  p_vec_sampling_30loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss[[i]]$P
-  aic_dif_vec_sampling_30loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss[[i]]$independent.AIC-
-    corevol_diet_xylem_primary.endosymbiont_dated_species_sampling_30loss[[i]]$dependent.AIC
+for(i in 1:length(corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss)){
+  p_vec_sampling_30loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss[[i]]$P
+  aic_dif_vec_sampling_30loss[i]<-corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss[[i]]$independent.AIC-
+    corevol_diet_xylem_primary.endosymbiont_dated_genus_sampling_30loss[[i]]$dependent.AIC
 }
 
 aic_dif_density_plot_sampling_30loss<-
@@ -1180,10 +1154,10 @@ aic_dif_density_plot_sampling_30loss<-
   xlim(0,25)+
   xlab("delta AIC")+
   theme_bw()+
-  ggtitle("C. Species loss 30%")
+  ggtitle("C. Genus loss 30%")
 aic_dif_density_plot_sampling_30loss
 
-png("./Output/corevol_diet_xylem_primary.endosymbiont_undated_subfam_full_sampling_loss_aic_dif_plots.png",width = 1200)
+png("./Output/FigureS8.png",width = 1200)
 grid.arrange(aic_dif_density_plot_sampling_10loss,aic_dif_density_plot_sampling_20loss,aic_dif_density_plot_sampling_30loss,
              ncol=3)
 dev.off()
