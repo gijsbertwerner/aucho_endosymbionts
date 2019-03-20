@@ -1,0 +1,49 @@
+>EU645962.1 Eurinopsyche obscurata isolate FUL058 wingless (Wg) gene, partial cds
+------------tgtaccgtaaagacatgttggatgagactacctaattttcgagttgtc
+ggtgataatctgaaagaccgattcgatggtgcgtcaagagttatgataggraatacggga
+agtcttcg---aggtggtggtggtaaaaagaatcgatataattttcaattaaaaccgtat
+aatccagatcataagcctccaggacagaaagatcttgtctatttagagccatcacccgga
+ttctgcgagagaaatccaagattaggtatacaaggtacacacggtcgacagtgtaacgat
+acatctatcggtgtggacggatgtgatctgatgtgttgtggc
+>EU645934.1 Copidocephala guttata isolate FUL020 wingless (Wg) gene, partial cds
+atgtctggatcttgtaccgtgaaaacatgttggatgagactacctaattttcgagtcgtc
+ggcgataatctgaaagatcgattcgacggtgcgtcaagagttatgataggaaatacggga
+agtcttcg---aggcggtggtggtaaaaagaatcgatataattttcaattgaaaccgtac
+aatccagatcataaaccgccaggacagaaagatctcgtctatttagaaccatcacccggt
+ttttgcgagagaaatccaagactcggtatacaaggtacacacggtcgacagtgcaacgat
+acatctatcggtgtggacggatgtgatctgatgtgttgtggc
+>EU645923.1 Bothriocera eborea isolate CIX004 wingless (Wg) gene, partial cds
+atgtctggctcatgtacggtgaagacgtgctggatgcgtctgcccaactttagggtggtg
+ggcgacaatcttaaggaccgcttcgacggtgcgtcccgcgtgatggtgggcaatgccggc
+agtccccgcgccagcaaccagggccggaagagccgctacaacttccagctcaagccctac
+aacccggaccacaagccacccggcaacaaggacctagtctatctggagccttcgcccggc
+ttctgcgaacgtaaccctcgtttgggcatccagggcacgcacggacgccagtgcaacgac
+acatcaatcggcgtggacggttgcgacctaatgtgttgt---
+>EU645964.1 Zanna sp. 1 JMU-2008 wingless (Wg) gene, partial cds
+-----tggatcttgtactgtaaaaacgtgttggatgagattacctaattttcgagtagtc
+ggtgataaccttaaagatcgatttgacggcgcttcaagagttatgataagtaatactgga
+agtattc------gtggtgctggtaaaaaaaatagatataattttcagttaaaaccatac
+aatccagatcataaaccaccaggaccaaaagatcttgtatatttagaaccatcaccagga
+ttttgtgaaaaaaatccaagacttggaatac-----------------------------
+------------------------------------------
+>DQ532742.1 Scolops sulcipes isolate DIC01 wingless (Wg) gene, partial cds
+------------------------------------------------------------
+-----------taaagatcgttttgatggtgcatctagagttatgataagcaatacggga
+agtcttcg---cggtagtggaggaaaaaagaatcgttataattttcaattaaaaccttac
+aatccggatcataaaccaccgggtccaaaagatctcgtttatttagaaccatcacctggt
+ttttgtgaaagaaatccaagattaggtattcaaggtacacatggtcgacagtgtaacgat
+acatcgataggtgttgatggatgtgatctgatgtgt------
+>DQ532758.1 Scaralis semillimpida isolate FUL50 wingless (Wg) gene, partial cds
+atgtctgggtcttgtaccgtgaaaacatgttggatgagattacctaattttcgagttgtc
+ggtgataatctaaaagatcgattcgacggagcgtcaagagttatgataggaaatacggga
+agtcttcg---aggcggtggtggtaaaaagaatcgatataattttcaattaaaaccgtac
+aatccagatcataaaccgccaggaccgaaagatctcgtctatttagaaccatcacctggt
+ttttgcgagagaaatccaagactaggtatacaaggtacacacggtcgacagtgcaacgat
+acatctatcggtgtggacggatgtgatctgatgtgt------
+>EU645966.1 Pyrops delessertii isolate FUL063 wingless (Wg) gene, partial cds
+atgtctggatcttgtaccgtgaaaacatgttggatgagactacctaattttcgagttgtc
+ggtgataatctaaaagatagattcgatggtgcctcaagagttatgatagggaataccgga
+agtcttcg---aggtggtggtggtaaaaagaatcgttataatttccaattaaaaccatat
+aatccagatcataagcctccaggaccgaaagatctcgtctatttagaaccatcgcccggt
+ttctgcgagagaaatccaagactcggtatacaaggtacacacggtcgacagtgcaacgat
+acatctatcggtgtggacggatgtgatctgatgtgttgtgg-
