@@ -22,7 +22,7 @@ library(ggplot2)
 #Load the data-files
 
 #Phylogenies read-in
-aucho_subfam_dated<-read.tree("./Data/Dating/r8s/dist/aucho_till_subfamily_boosterweb_dated.phy")
+aucho_subfam_dated<-read.tree("./Data/aucho_till_subfamily_boosterweb_dated.phy")
 
 #Quick filecheck
 aucho_subfam_dated
@@ -570,7 +570,7 @@ dev.off()
 
 #########
 #1.1 Undated subfamily tree boostrap
-aucho_subfam_undated_boots<-read.tree("./Data/RAxML_bootstrap.out_in_lbrem_outdefined_constraint_till_subfamily_minus_Formo_Xyphon_k")
+aucho_subfam_undated_boots<-read.tree("./Data/RAxML_bootstrap.out_in_lbrem_outdefined_constraint_till_subfamily")
 aucho_subfam_undated_boots
 
 #Subset to the genera where we have correlated diet vs primary data:
