@@ -1,331 +1,166 @@
 X,hemipteran.species,genus,infraorder,superfamily,family,subfamily,primary.endosymbiont,primary.endosymbiont.identity,primary.endosymbiont.taxonomic.group,companion.symbiont,companion.symbiont.identity,companion.symbiont.taxonomic.group,companion.symbiont.remarks,third.symbiont,third.symbiont.identity,third.symbiont.taxonomic.group,third.symbiont.remarks,diet,diet.remarks,reference
-,,,,,,,,,,,,,,,,,,,,
 1,Aphrophora quadrinotata,Aphrophora,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola + Sodalis glossinidius,beta_proteobacteria_plus_gamma_proteobacteria,,1,Sodalis glossinidius,gamma_proteobacteria,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 2,Cephisus siccifolia,Cephisus,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 3,Clovia sp.,Clovia,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 4,Lepyronia coleoptrata,Lepyronia,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 5,Mesoptyelus fascialis,Mesoptyelus,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Sodalis glossinidius,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 6,Microsargane vitatta,Microsargane,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 7,Neophilaenus lineatus,Neophilaenus,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Sodalis glossinidius,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 8,Philaenus spumarius,Philaenus,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Sodalis glossinidius,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013; Daane 2011
-,,,,,,,,,,,,,,,,,,,,
 9,Philagra sp.,Philagra,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 10,Ptyelus grossus,Ptyelus,Cicadomorpha,Cercopoidea,Aphrophoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,0,Absent,Absent,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 11,Cosmoscarta heros,Cosmoscarta,Cicadomorpha,Cercopoidea,Cercopidae,Cercopinae,1,Candidatus Sulcia muelleri,Bacteroidetes,0,Absent,Absent,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 12,Euryaulax carnifex,Euryaulax,Cicadomorpha,Cercopoidea,Cercopidae,Cercopinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 13,Aeneolamia contigua,Aeneolamia,Cicadomorpha,Cercopoidea,Cercopidae,Ischnorhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,0,Absent,Absent,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 14,Baetkia maroniensis,Baetkia,Cicadomorpha,Cercopoidea,Cercopidae,Ischnorhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 15,Huaina inca,Huaina,Cicadomorpha,Cercopoidea,Cercopidae,Ischnorhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 16,Mahanarva costaricensis,Mahanarva,Cicadomorpha,Cercopoidea,Cercopidae,Ischnorhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Xylem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 17,Maxantonia diversa,Maxantonia,Cicadomorpha,Cercopoidea,Cercopidae,Ischnorhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 18,Ocoaxo lineatus,Ocoaxo,Cicadomorpha,Cercopoidea,Cercopidae,Ischnorhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 19,Prosapia bicincta,Prosapia,Cicadomorpha,Cercopoidea,Cercopidae,Ischnorhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 20,Aufidus trifasciatus,Aufidus,Cicadomorpha,Cercopoidea,Cercopidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 21,Locris maculatat,Locris,Cicadomorpha,Cercopoidea,Cercopidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 22,Machadoa invenusta,Machadoa,Cicadomorpha,Cercopoidea,Cercopidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 23,Philaenarcys bilineata,Philaenarcys,Cicadomorpha,Cercopoidea,Cercopidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Sodalis glossinidius,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 24,Clastoptera arizonana,Clastoptera,Cicadomorpha,Cercopoidea,Clastopteridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,Xylem (all spittlebugs),McCutcheon 2010; Tassone 2017
-,,,,,,,,,,,,,,,,,,,,
 25,Eicissus sp.,Eicissus,Cicadomorpha,Cercopoidea,Epipygidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,0,Absent,Absent,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 26,Chaetophyes vicina,Chaetophyes,Cicadomorpha,Cercopoidea,Machaerotidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 27,Hindoloides bipunctatus,Hindoloides,Cicadomorpha,Cercopoidea,Machaerotidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Xylem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 28,Machaerota takeuchii,Machaerota,Cicadomorpha,Cercopoidea,Machaerotidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 29,Pectinariophyes reticulata,Pectinariophyes,Cicadomorpha,Cercopoidea,Machaerotidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Zinderia insecticola,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 30,Kosemia yezoensis,Kosemia,Cicadomorpha,Cicadoidea,Cicadidae,Cicadettinae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 32,Magicicada tredecim,Magicicada,Cicadomorpha,Cicadoidea,Cicadidae,Cicadettinae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 33,Muda kuroiwae,Muda,Cicadomorpha,Cicadoidea,Cicadidae,Cicadettinae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 34,Tettigetta mariae,Tettigetta,Cicadomorpha,Cicadoidea,Cicadidae,Cicadettinae,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Xylem,,Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 36,Auritibicen japonicus,Auritibicen,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 37,Cicada orni,Cicada,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Xylem,,Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 39,Cryptotympana atrata,Cryptotympana,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 41,Diceroprocta semicincta,Diceroprocta,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 42,Euterpnosia chibensis,Euterpnosia,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 44,Graptopsaltria bimaculata,Graptopsaltria,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 45,Hyalessa maculaticollis,Hyalessa,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 50,Meimuna iwasakii,Meimuna,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,1,Spiroplasma,Mollicutes,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 51,Mogannia minuta,Mogannia,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 53,Platypleura kaempferi,Platypleura,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,1,Arsenophonus,gamma_proteobacteria,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 54,Tanna japonensis,Tanna,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,1,Sodalis,gamma_proteobacteria,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 55,Vagitanus terminalis,Vagitanus,Cicadomorpha,Cicadoidea,Cicadidae,Cicadinae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 58,Tettigades undata,Tettigades,Cicadomorpha,Cicadoidea,Cicadidae,Tibicininae,1,Sulcia,Bacteroidetes,1,Hodgkinia,alfa_proteobacteria,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
-,,,,,,,,,,,,,,,,,,,,
 59,Tibicina garricola,Tibicina,Cicadomorpha,Cicadoidea,Cicadidae,Tibicininae,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Xylem,,Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 60,Acrogonia virescens,Acrogonia,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 61,Cicadella viridis,Cicadella,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Sodalis-like,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006; Michalik 2014
-,,,,,,,,,,,,,,,,,,,,
 62,Cuerna sayi,Cuerna,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Bennett 2014; Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 63,Cyrtodisca major,Cyrtodisca,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 64,Deltocephalus pulicaris,Deltocephalus,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Nasuia,beta_proteobacteria,,NA,NA,NA,NA,Phloem,,Kobialka 2015
-,,,,,,,,,,,,,,,,,,,,
 65,Diestostemma excisum,Diestostemma,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 66,Draeculacephala minerva,Draeculacephala,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Baumannia cicadellinicola,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,McCutcheon 2010; Woyke 2010; Daane 2011
-,,,,,,,,,,,,,,,,,,,,
 67,Graphocephala atropunctata,Graphocephala,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Bennett 2014; Tassone 2017
-,,,,,,,,,,,,,,,,,,,,
 68,Helochara communis,Helochara,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 69,Homalodisca vitripennis,Homalodisca,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumannia cicadellinicola,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,Xylem (all sharpshooters),McCutcheon 2010; McCutcheon 2007
-,,,,,,,,,,,,,,,,,,,,
 70,Homoscarta irregularis,Homoscarta,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 71,Hylaius oregonensis,Hylaius,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,betasymb,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006; Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 72,Oncometopia orbona,Oncometopia,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 73,Pamplona spatulata,Pamplona,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 74,Paraulacizes irrorata,Paraulacizes,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 75,Paromenia isabellina,Paromenia,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Moran 2005; Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 76,Phera obtusifrons,Phera,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 77,Proconosama alalia,Proconosama,Cicadomorpha,Membracoidea,Cicadellidae,Cicadellinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 78,Jikradia olitoria,Jikradia,Cicadomorpha,Membracoidea,Cicadellidae,Coelidiinae,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Xylem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 79,Acinopterus sp.,Acinopterus,Cicadomorpha,Membracoidea,Cicadellidae,Deltocephalinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Nasuia,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Noda 2012
-,,,,,,,,,,,,,,,,,,,,
 80,Dalbulus maidis,Dalbulus,Cicadomorpha,Membracoidea,Cicadellidae,Deltocephalinae,1,Candidatus Sulcia muelleri,Bacteroidetes,0,Absent,Absent,,0,Absent,Absent,NA,Phloem,,Brentassi 2017; Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 82,Excultanus sp.,Excultanus,Cicadomorpha,Membracoidea,Cicadellidae,Deltocephalinae,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 83,Macrosteles quadrilineatus,Macrosteles,Cicadomorpha,Membracoidea,Cicadellidae,Deltocephalinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Nasuia deltocephalinicola,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Douglas 2016; Bennett 2013
-,,,,,,,,,,,,,,,,,,,,
 84,Nephotettix cincticeps,Nephotettix,Cicadomorpha,Membracoidea,Cicadellidae,Deltocephalinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Nasuia deltocephalinicola,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Noda 2012; Hattori 2015
-,,,,,,,,,,,,,,,,,,,,
 85,Scaphoideus titanus,Scaphoideus,Cicadomorpha,Membracoidea,Cicadellidae,Deltocephalinae,0,Absent,Absent,1,Sordariomycetes,YLS,Sordariomycetes is a class not a genus,0,Absent,Absent,NA,Phloem,,Sacchi 2008; Bennett 2013
-,,,,,,,,,,,,,,,,,,,,
 86,Evacanthus interruptus,Evacanthus,Cicadomorpha,Membracoidea,Cicadellidae,Evacanthinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,betasymb,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Moran 2005; Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 87,Pagaronia tredecimpunctata,Pagaronia,Cicadomorpha,Membracoidea,Cicadellidae,Evacanthinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,betasymb,beta_proteobacteria,,0,Absent,Absent,NA,Xylem,,Takiya 2006; Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 88,Hamana dictatoria,Hamana,Cicadomorpha,Membracoidea,Cicadellidae,Gyponinae,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Xylem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 89,Ledra auditura,Ledra,Cicadomorpha,Membracoidea,Cicadellidae,Ledrinae,0,Absent,Absent,1,Ophiocordyceps,YLS,YLS: Ascomycota: Hypocreales: Ophiocordycipitaceae,NA,NA,NA,NA,Phloem,,Nishino 2016
-,,,,,,,,,,,,,,,,,,,,
 90,Ledropsis discolor,Ledropsis,Cicadomorpha,Membracoidea,Cicadellidae,Ledrinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Ophiocordyceps,YLS,YLS: Ascomycota: Hypocreales: Ophiocordycipitaceae,NA,NA,NA,NA,Phloem,,Nishino 2016
-,,,,,,,,,,,,,,,,,,,,
 91,Tituria angulata,Tituria,Cicadomorpha,Membracoidea,Cicadellidae,Ledrinae,0,Absent,Absent,1,Ophiocordyceps,YLS,YLS: Ascomycota: Hypocreales: Ophiocordycipitaceae,NA,NA,NA,NA,Phloem,,Nishino 2016
-,,,,,,,,,,,,,,,,,,,,
 92,Clydacha catapulta,Clydacha,Cicadomorpha,Membracoidea,Cicadellidae,Phereurhininae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Baumania,gamma_proteobacteria,,0,Absent,Absent,NA,Phloem,,Takiya 2006
-,,,,,,,,,,,,,,,,,,,,
 93,Alebra albostriella,Alebra,Cicadomorpha,Membracoidea,Cicadellidae,Typhlocybinae,0,Absent,Absent,0,Absent,Absent,,NA,NA,NA,NA,Parenchyma,,Buchner 1965; Moran 2005; Bennet 2013; Douglas 2016
-,,,,,,,,,,,,,,,,,,,,
 94,Amrasca biguttula,Amrasca,Cicadomorpha,Membracoidea,Cicadellidae,Typhlocybinae,0,Absent,Absent,0,Absent,Absent,,NA,NA,NA,NA,Parenchyma,,Buchner 1965; Moran 2005; Bennet 2013; Douglas 2016
-,,,,,,,,,,,,,,,,,,,,
 95,Empoasca affinis,Empoasca,Cicadomorpha,Membracoidea,Cicadellidae,Typhlocybinae,0,Absent,Absent,0,Absent,Absent,,NA,NA,NA,NA,Parenchyma,,Buchner 1965; Moran 2005; Bennet 2013; Douglas 2016
-,,,,,,,,,,,,,,,,,,,,
 96,Erasmoneura variabilis,Erasmoneura,Cicadomorpha,Membracoidea,Cicadellidae,Typhlocybinae,0,Absent,Absent,0,Absent,Absent,,NA,NA,NA,NA,Parenchyma,,Buchner 1965; Moran 2005; Bennet 2013; Douglas 2016
-,,,,,,,,,,,,,,,,,,,,
 97,Philya ferruginosa,Philya,Cicadomorpha,Membracoidea,Membracidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 98,Platycotis vittata,Platycotis,Cicadomorpha,Membracoidea,Membracidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 99,Publilia modesta,Publilia,Cicadomorpha,Membracoidea,Membracidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 100,Spissistilus festinus,Spissistilus,Cicadomorpha,Membracoidea,Membracidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Koga 2013; Felton 1994
-,,,,,,,,,,,,,,,,,,,,
 101,Acanalonia fasciata,Acanalonia,Fulgoromorpha,Fulgoroidea,Acanaloniidae,NA,0,Absent,Absent,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Moran 2005; Urban 2012; Sudakaran 2017
-,,,,,,,,,,,,,,,,,,,,
 102,Aphypia longipennis,Aphypia,Fulgoromorpha,Fulgoroidea,Achilidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 103,Catonia carolina,Catonia,Fulgoromorpha,Fulgoroidea,Achilidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 104,Faventilla sp.,Faventilla,Fulgoromorpha,Fulgoroidea,Achilidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 105,Kurandella sp.,Kurandella,Fulgoromorpha,Fulgoroidea,Achilidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 106,Paracatonia sp.,Paracatonia,Fulgoromorpha,Fulgoroidea,Achilidae,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 107,Bothriocera daedala,Bothriocera,Fulgoromorpha,Fulgoroidea,Cixiidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 108,Cixius sp.,Cixius,Fulgoromorpha,Fulgoroidea,Cixiidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 110,Hyalesthes obsoletus,Hyalesthes,Fulgoromorpha,Fulgoroidea,Cixiidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,CandidatusPurcelliella pentastirinorum,gamma_proteobacteria,,1,Vidania,beta_proteobacteria,NA,Phloem,,Bressan 2009; Gonella 2011; Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 111,Oecleus perpictus,Oecleus,Fulgoromorpha,Fulgoroidea,Cixiidae,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 114,Oliarus tamehameha,Oliarus,Fulgoromorpha,Fulgoroidea,Cixiidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,CandidatusPurcelliella pentastirinorum,gamma_proteobacteria,,0,Absent,Absent,NA,Phloem,,Bressan 2009
-,,,,,,,,,,,,,,,,,,,,
 115,Pintalia vibex,Pintalia,Fulgoromorpha,Fulgoroidea,Cixiidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 117,Reptalus melanochaetus,Reptalus,Fulgoromorpha,Fulgoroidea,Cixiidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Vidania,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Bressan 2013
-,,,,,,,,,,,,,,,,,,,,
 118,Copicerus irroratus,Copicerus,Fulgoromorpha,Fulgoroidea,Delphacidae,Asiracinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 119,Ugyops stigmata,Ugyops,Fulgoromorpha,Fulgoroidea,Delphacidae,Asiracinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 120,Laodelphax striatellus,Laodelphax,Fulgoromorpha,Fulgoroidea,Delphacidae,Criomorphinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,,0,Absent,Absent,NA,Phloem,,Fan 2015
-,,,,,,,,,,,,,,,,,,,,
 121,Conomelus anceps,Conomelus,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,,0,Absent,Absent,NA,Phloem,,Michalik 2009
-,,,,,,,,,,,,,,,,,,,,
 122,Javesella pellucida,Javesella,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 123,Megamelus distinctus,Megamelus,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 124,Nilaparvata lugens,Nilaparvata,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,,0,Absent,Absent,NA,Phloem,,Xue 2014; Fan 2015
-,,,,,,,,,,,,,,,,,,,,
 125,Opiconsiva sp.,Opiconsiva,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 126,Peregrinus maidis,Peregrinus,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,,NA,NA,NA,NA,Phloem,,Fan 2015; Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 127,Prokelisia dolus,Prokelisia,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,NA,NA,NA,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 128,Saccharosydne saccharivora,Saccharosydne,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 129,Sogatella furcifera,Sogatella,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,,0,Absent,Absent,NA,Phloem,,Fan 2015
-,,,,,,,,,,,,,,,,,,,,
 130,Stobaera concinna,Stobaera,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 131,Tagosodes pusanus,Tagosodes,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 132,Tropidocephala sp.,Tropidocephala,Fulgoromorpha,Fulgoroidea,Delphacidae,Delphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 133,Burnilia sp.,Burnilia,Fulgoromorpha,Fulgoroidea,Delphacidae,Plesiodelphacinae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 134,Stenocranus sp.1,Stenocranus,Fulgoromorpha,Fulgoroidea,Delphacidae,Stenocraninae,0,Absent,Absent,1,Entomomyces delphacidicola,YLS,Entomomyces delphacidicola - potentially,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 135,Neopunana caribbensis,Neopunana,Fulgoromorpha,Fulgoroidea,Delphacidae,Ugyopinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 136,Anotia binnetii,Anotia,Fulgoromorpha,Fulgoroidea,Derbidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 137,Cedusa obscura,Cedusa,Fulgoromorpha,Fulgoroidea,Derbidae,NA,0,Absent,Absent,0,Absent,Absent,,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 138,Omalicna sp.,Omalicna,Fulgoromorpha,Fulgoroidea,Derbidae,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 139,Afronersia sp.,Afronersia,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 140,Capenopsis sp.,Capenopsis,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 141,Hyalodictyon sp.,Hyalodictyon,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 142,Lappida sp.,Lappida,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 143,Mitrops sp.,Mitrops,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 144,Orgamara argentia,Orgamara,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 145,Orgerius proprius,Orgerius,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 146,Raivuna sp.1,Raivuna,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 147,Rhynchomitra microrhina,Rhynchomitra,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 148,Scolops sp.,Scolops,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Koga 2013
-,,,,,,,,,,,,,,,,,,,,
 149,Ticida subapplanata,Ticida,Fulgoromorpha,Fulgoroidea,Dictyopharidae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 150,Olonia sp.,Olonia,Fulgoromorpha,Fulgoroidea,Eurybrachyidae,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 151,Platybrachys sp.,Platybrachys,Fulgoromorpha,Fulgoroidea,Eurybrachyidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 152,Metcalfa pruinosa,Metcalfa,Fulgoromorpha,Fulgoroidea,Flatidae,NA,0,Absent,Absent,1,YLS,YLS,,0,Absent,Absent,NA,Phloem,,Michalik 2009
-,,,,,,,,,,,,,,,,,,,,
 153,Mistharnophantia sp.,Mistharnophantia,Fulgoromorpha,Fulgoroidea,Flatidae,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 154,Ormenis saucia,Ormenis,Fulgoromorpha,Fulgoroidea,Flatidae,NA,NA,NA,NA,NA,NA,NA,,0,Absent,Absent,NA,Phloem,,Moran 2005
-,,,,,,,,,,,,,,,,,,,,
 155,Enchophora sanguinea,Enchophora,Fulgoromorpha,Fulgoroidea,Fulgoridae,Aphaeninae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 156,Episcius guianensis,Episcius,Fulgoromorpha,Fulgoroidea,Fulgoridae,Aphaeninae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 157,Penthicodes pulchella,Penthicodes,Fulgoromorpha,Fulgoroidea,Fulgoridae,Aphaeninae,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 158,Pyrops sp.,Pyrops,Fulgoromorpha,Fulgoroidea,Fulgoridae,Fulgorinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 159,Zanna sp.1,Zanna,Fulgoromorpha,Fulgoroidea,Fulgoridae,Fulgorinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 160,Alphina glauca,Alphina,Fulgoromorpha,Fulgoroidea,Fulgoridae,Lystrinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 161,Phenax variegata,Phenax,Fulgoromorpha,Fulgoroidea,Fulgoridae,Phenacinae,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 162,Pterodictya reticularis,Pterodictya,Fulgoromorpha,Fulgoroidea,Fulgoridae,Phenacinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 163,Poblicia fuliginosa,Poblicia,Fulgoromorpha,Fulgoroidea,Fulgoridae,Poiocerinae,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 164,Amycle vernalis,Amycle,Fulgoromorpha,Fulgoroidea,Fulgoridae,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 165,Thionia argo,Thionia,Fulgoromorpha,Fulgoroidea,Issidae,Issinae,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 166,Lophops sp.,Lophops,Fulgoromorpha,Fulgoroidea,Lophopidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 167,Euricania sp.,Euricania,Fulgoromorpha,Fulgoroidea,Ricaniidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 168,Pochazia guttifera,Pochazia,Fulgoromorpha,Fulgoroidea,Ricaniidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 169,Tangia viridis,Tangia,Fulgoromorpha,Fulgoroidea,Tropiduchidae,NA,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 170,Aphelonema sp.,Aphelonema,Fulgoromorpha,Fulgoroidea,NA,Caliscelidae,0,Absent,Absent,NA,NA,NA,May all posses YLS,NA,NA,NA,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 171,Ceratocombus,Ceratocombus,NA,NA,Ceratocombidae,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,Predatory,,Lattin 2000
-,,,,,,,,,,,,,,,,,,,,
 172,Xenophyes,Xenophyes,NA,NA,Peloridiidae,NA,1,Candidatus Evansia muelleri,gamma_proteobacteria,0,Absent,Absent,,NA,NA,NA,NA,Moss,,Santos-Garcia 2014
-,,,,,,,,,,,,,,,,,,,,
 173,Danepteryx sp.,Danepteryx,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 174,Dictyssa sp.,Dictyssa,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 175,Hilda undata,Hilda,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 176,Matsumuratettix hiroglyphicus,Matsumuratettix,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Nasuia,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Ishii 2013; Wangkeeree 2012; Szklarzewicz 2016
-,,,,,,,,,,,,,,,,,,,,
 177,Nisia sp.,Nisia,NA,NA,NA,NA,0,Absent,Absent,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 178,Oeclidius sp.,Oeclidius,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 179,Onycta sp.,Onycta,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 180,Pentastiridius leporinus,Pentastiridius,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,CandidatusPurcelliella pentastirinorum,gamma_proteobacteria,,0,Absent,Absent,NA,Phloem,,Bressan 2009
-,,,,,,,,,,,,,,,,,,,,
 181,Southia sp.,Southia,NA,NA,NA,NA,1,Candidatus Sulcia muelleri,Bacteroidetes,1,Candidatus Vidania fulgoroideae,beta_proteobacteria,,0,Absent,Absent,NA,Phloem,,Urban 2012
-,,,,,,,,,,,,,,,,,,,,
 183,Terpnosia nigricosta,Terpnosia,NA,NA,NA,NA,1,Sulcia,Bacteroidetes,0,Ophiocordyceps,YLS,,0,Absent,Absent,NA,Xylem,,Matsuura 2018
