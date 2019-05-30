@@ -4,4 +4,4 @@ This projects contains an R-script to repeat all the analyses and generate all t
 
 Full data files, including full phylogeny, alignment files and trait data files are available.
 
-Additionally, the full GitHub repository will be archived on Dryad (doi here).
+Additionally, the full GitHub repository will be archived on Dryad (doi: 10.5061/dryad.95p761k).
